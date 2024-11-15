@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="company.demo15.SignUpPage">
+   <children>
+      <Text layoutX="160.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SIGN UP PAGE">
+         <font>
+            <Font name="System Bold" size="42.0" />
+         </font>
+      </Text>
+
+      <Label fx:id="UserNameID" layoutX="12.0" layoutY="100.0" text="Full Name">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+
+      <TextField fx:id="FullNameTxtID" layoutX="150.0" layoutY="90.0" prefHeight="46.0" prefWidth="300.0" promptText="Enter Full Name">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </TextField>
+
+      <Label fx:id="PasswordID" layoutX="12.0" layoutY="160.0" text="Password">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+
+      <PasswordField fx:id="PasswordtxtID" layoutX="150.0" layoutY="150.0" prefHeight="46.0" prefWidth="300.0" promptText="Enter password">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </PasswordField>
+
+      <Label fx:id="RoleID" layoutX="12.0" layoutY="220.0" text="Role">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+
+      <TextField fx:id="RoleTxtID" layoutX="150.0" layoutY="210.0" prefHeight="46.0" prefWidth="300.0" promptText="Enter role (PRL, Lecturer, Faculty Admin)">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </TextField>
+
+      <Label fx:id="EmployeeNumberID" layoutX="12.0" layoutY="280.0" text="Employee Number">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+
+      <TextField fx:id="EmployeeNumberTxtID" layoutX="150.0" layoutY="270.0" prefHeight="46.0" prefWidth="300.0" promptText="Enter Employee Number">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </TextField>
+
+      <Button fx:id="SignUpButton" layoutX="150.0" layoutY="350.0" mnemonicParsing="false" onAction="#signUp" prefHeight="40.0" prefWidth="300.0" text="Sign Up">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

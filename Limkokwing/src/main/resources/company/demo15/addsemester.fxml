@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="company.demo15.Addsemester">
+   <children>
+      <ImageView fx:id="imageid" fitHeight="400.0" fitWidth="600.0">
+         <image>
+            <Image url="@semester.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="semesterid" layoutX="63.0" layoutY="136.0" text="Semester id">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="academicyearid" layoutX="63.0" layoutY="276.0" text="Academic year id">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="semesternameID" layoutX="63.0" layoutY="205.0" text="Semester name">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="semestertxtid" layoutX="301.0" layoutY="134.0" onAction="#AddsemesterID" promptText="Enter semester id">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="academicyeartxtid" layoutX="301.0" layoutY="272.0" onAction="#Addacademicyearid" promptText="Enter academic year id">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="semesternametxtID" layoutX="301.0" layoutY="205.0" onAction="#AddSemestername" promptText="Enter semester name">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </TextField>
+      <Button fx:id="saveid" layoutX="58.0" layoutY="332.0" mnemonicParsing="false" onAction="#SaveSemester" prefHeight="43.0" prefWidth="110.0" text="Save ">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="updateid" layoutX="195.0" layoutY="332.0" mnemonicParsing="false" onAction="#UpdateSemester" prefHeight="43.0" prefWidth="110.0" text="update">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="viewid" layoutX="329.0" layoutY="332.0" mnemonicParsing="false" onAction="#ViewSemester" prefHeight="43.0" prefWidth="100.0" text="view">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="deleteid" layoutX="444.0" layoutY="332.0" mnemonicParsing="false" onAction="#DeleteSemester" prefHeight="43.0" prefWidth="123.0" text="delete">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

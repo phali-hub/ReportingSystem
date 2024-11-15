@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="company.demo15.Signup">
+    <children>
+        <Text layoutX="160.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SIGN UP PAGE">
+            <font>
+                <Font name="System Bold" size="42.0" />
+            </font>
+        </Text>
+
+        <Label fx:id="UserNameID" layoutX="12.0" layoutY="100.0" text="Full Name" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="21.0" />
+            </font>
+        </Label>
+
+        <TextField fx:id="FullNameTxtID" layoutX="240.0" layoutY="90.0" prefHeight="46.0" prefWidth="300.0" promptText="Enter Full Name">
+            <font>
+                <Font name="System Bold" size="21.0" />
+            </font>
+        </TextField>
+
+        <Label fx:id="PasswordID" layoutX="12.0" layoutY="160.0" text="Password" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="21.0" />
+            </font>
+        </Label>
+
+        <PasswordField fx:id="PasswordtxtID" layoutX="240.0" layoutY="150.0" prefHeight="46.0" prefWidth="300.0" promptText="Enter password">
+            <font>
+                <Font name="System Bold" size="21.0" />
+            </font>
+        </PasswordField>
+
+        <Label fx:id="RoleID" layoutX="12.0" layoutY="220.0" text="Role" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="21.0" />
+            </font>
+        </Label>
+
+        <TextField fx:id="RoleTxtID" layoutX="240.0" layoutY="210.0" prefHeight="46.0" prefWidth="300.0" promptText="Enter role (PRL, Lecturer, Faculty Admin)">
+            <font>
+                <Font name="System Bold" size="21.0" />
+            </font>
+        </TextField>
+
+        <Label fx:id="EmployeeNumberID" layoutX="12.0" layoutY="280.0" text="Employee Number" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="21.0" />
+            </font>
+        </Label>
+
+        <TextField fx:id="EmployeeNumberTxtID" layoutX="240.0" layoutY="270.0" prefHeight="46.0" prefWidth="300.0" promptText="Enter Employee Number">
+            <font>
+                <Font name="System Bold" size="21.0" />
+            </font>
+        </TextField>
+
+        <Button fx:id="SignUpButton" blendMode="BLUE" layoutX="436.0" layoutY="344.0" mnemonicParsing="false" onAction="#signUp" prefHeight="40.0" prefWidth="94.0" text="Sign Up">
+            <font>
+                <Font name="System Bold Italic" size="15.0" />
+            </font>
+        </Button>
+      <Button fx:id="loginid" blendMode="GREEN" layoutX="12.0" layoutY="348.0" mnemonicParsing="false" onAction="#login" prefHeight="26.0" prefWidth="84.0" text="Login">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Button>
+      <Text fill="#fcf8f8" layoutX="32.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LIMKOKWING REPORTING SYSTEM">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Text>
+    </children>
+</AnchorPane>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="company.demo15.Lecturer">
+   <children>
+      <ImageView fx:id="lecturerimg" fitHeight="400.0" fitWidth="600.0">
+         <image>
+            <Image url="@lecturer.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="65.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Adding a new lecturer in the system">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </Text>
+      <Label fx:id="userid" layoutX="70.0" layoutY="143.0" text="User_id">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="usertxtid" layoutX="300.0" layoutY="131.0" onAction="#SaveLecturer" promptText="Enter user id">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </TextField>
+      <Label fx:id="lecturerid" layoutX="71.0" layoutY="197.0" text="Lecturer_id">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="lecturertxtid" layoutX="301.0" layoutY="185.0" onAction="#SaveLecturer" promptText="Enter lecturer id">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </TextField>
+      <Label fx:id="departmentid" layoutX="72.0" layoutY="260.0" text="Department">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="departmentxtid" layoutX="302.0" layoutY="248.0" onAction="#SaveLecturer" promptText="Enter the department">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </TextField>
+      <Button fx:id="saveID" layoutX="70.0" layoutY="329.0" mnemonicParsing="false" onAction="#SaveLecturer" prefHeight="41.0" prefWidth="99.0" text="Save">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button fx:id="deleteID" layoutX="185.0" layoutY="329.0" mnemonicParsing="false" onAction="#DeleteLecturer" prefHeight="41.0" prefWidth="99.0" text="Delete">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button fx:id="updateID" layoutX="315.0" layoutY="329.0" mnemonicParsing="false" onAction="#UpdateLecturer" prefHeight="41.0" prefWidth="99.0" text="Update">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button fx:id="viewID" layoutX="453.0" layoutY="329.0" mnemonicParsing="false" onAction="#ViewLecturer" prefHeight="41.0" prefWidth="99.0" text="View">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

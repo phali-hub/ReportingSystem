@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="425.0" prefWidth="606.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="company.demo15.PRL">
+    <children>
+        <ImageView fx:id="imgid" fitHeight="453.0" fitWidth="606.0" layoutY="-10.0">
+            <image>
+                <Image url="@prl.jpg" />
+            </image>
+        </ImageView>
+
+        <!-- Title -->
+        <Text layoutX="80.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PRINCIPAL LECTURER ROLES">
+            <font>
+                <Font name="System Bold" size="29.0" />
+            </font>
+        </Text>
+
+        <!-- Row 1: ComboBox for selecting Lecturer and Class -->
+        <ComboBox fx:id="lecturerComboBox" layoutX="30.0" layoutY="87.0" prefHeight="39.0" prefWidth="250.0" promptText="Select Lecturer" />
+        <ComboBox fx:id="classComboBox" layoutX="300.0" layoutY="87.0" prefHeight="39.0" prefWidth="250.0" promptText="Select Class" />
+
+        <!-- Row 2: ComboBox for selecting Module and Week Number -->
+        <ComboBox fx:id="moduleComboBox" layoutX="30.0" layoutY="137.0" prefHeight="39.0" prefWidth="250.0" promptText="Select Module" />
+        <TextField fx:id="weekNumberField" layoutX="300.0" layoutY="137.0" prefHeight="39.0" prefWidth="250.0" promptText="Week Number" />
+
+        <!-- Row 3: TextArea for Challenges and Recommendations -->
+        <TextArea fx:id="challengesArea" layoutX="30.0" layoutY="210.0" prefHeight="110.0" prefWidth="250.0" promptText="Enter Challenges" />
+        <TextArea fx:id="recommendationsArea" layoutX="300.0" layoutY="210.0" prefHeight="110.0" prefWidth="250.0" promptText="Enter Recommendations" />
+
+        <!-- Label for Submission Date (auto-generated) -->
+        <Label fx:id="submissionDateLabel" layoutX="31.0" layoutY="330.0" prefHeight="18.0" prefWidth="243.0" text="Submission Date (auto)" />
+
+        <!-- Button Container for Three-Button Layout -->
+        <AnchorPane layoutX="100.0" layoutY="370.0" prefWidth="400.0">
+            <!-- Submit Button -->
+            <Button fx:id="submitButton" layoutX="-66.0" onAction="#handleSubmit" prefWidth="120.0" text="Submit Report">
+                <font>
+                    <Font name="System Bold" size="14.0" />
+                </font>
+            </Button>
+            <!-- Clear Button -->
+            <Button fx:id="clearButton" layoutX="140.0" layoutY="0.0" onAction="#handleClear" prefWidth="120.0" text="Clear Form">
+                <font>
+                    <Font name="System Bold" size="14.0" />
+                </font>
+            </Button>
+            <!-- Logout Button -->
+            <Button fx:id="logoutButton" layoutX="328.0" onAction="#handleLogout" prefWidth="120.0" text="Logout">
+                <font>
+                    <Font name="System Bold" size="14.0" />
+                </font>
+            </Button>
+        </AnchorPane>
+    </children>
+</AnchorPane>

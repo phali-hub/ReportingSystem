@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="535.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="company.demo15.LecturerROLE">
+    <children>
+        <!-- Image at the top -->
+        <ImageView fx:id="imgid" fitHeight="500.0" fitWidth="741.0">
+            <image>
+                <Image url="@lroles.jpg" />
+            </image>
+        </ImageView>
+
+        <!-- GridPane to arrange form elements in rows and columns -->
+        <GridPane hgap="10.0" layoutX="38.0" layoutY="65.0" prefHeight="244.0" prefWidth="554.0" vgap="10.0">
+   <children>
+               <!-- Row 1: ComboBoxes for class and module selection -->
+               <ComboBox fx:id="classComboBox" prefHeight="62.0" prefWidth="272.0" promptText="Select Class" GridPane.columnIndex="0" />
+               <ComboBox fx:id="moduleComboBox" prefHeight="64.0" prefWidth="272.0" promptText="Select Module" GridPane.columnIndex="1" />
+   
+               <!-- Row 2: TextAreas for challenges and recommendations -->
+               <TextArea fx:id="challengesArea" prefHeight="100.0" prefWidth="291.0" promptText="Enter Challenges" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+               <TextArea fx:id="recommendationsArea" prefHeight="95.0" prefWidth="206.0" promptText="Enter Recommendations" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+   
+               <!-- Row 3: TextFields for chapter and learning outcomes -->
+               <TextField fx:id="chapterField" prefHeight="64.0" prefWidth="272.0" promptText="Enter Chapter" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+               <TextField fx:id="learningOutcomesField" prefHeight="60.0" prefWidth="156.0" promptText="Enter Learning Outcomes" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+   </children>
+
+            <!-- Column and Row Constraints for GridPane -->
+            <columnConstraints>
+                <ColumnConstraints />
+                <ColumnConstraints />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+            </rowConstraints>
+        </GridPane>
+
+        <!-- Text element displaying Lecturer Role label -->
+        <Text fill="#fff6f6" layoutX="140.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lecturer Role">
+            <font>
+                <Font name="System Bold" size="35.0" />
+            </font>
+        </Text>
+
+            <!-- Row 4: Submit and Attendance buttons -->
+         <Button fx:id="submitButton" layoutX="38.0" layoutY="309.0" onAction="#handleSubmit" text="Submit Report">
+             <font>
+                 <Font name="System Bold" size="21.0" />
+             </font>
+         </Button>
+         <Button fx:id="attendanceButton" layoutX="409.0" layoutY="310.0" onAction="#handleAttendance" text="Mark Attendance">
+            <text>
+                <Button fx:id="logoutButton" layoutX="328.0" onAction="#handleLogout" prefWidth="120.0" text="Logout"/>
+            </text>
+
+                <font>
+                 <Font name="System Bold" size="18.0" />
+             </font>
+         </Button>
+    </children>
+</AnchorPane>

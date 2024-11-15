@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="462.0" prefWidth="609.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="company.demo15.AdminRoles">
+   <children>
+      <ImageView fx:id="img" fitHeight="410.0" fitWidth="608.0" layoutX="1.0" layoutY="-3.0" style="fx-background-color: black; -fx-blend-mode: black;">
+         <image>
+            <Image url="@adminimg.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="167.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ADMIN PAGE">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Text>
+
+      <!-- Admin Page Buttons -->
+      <Button fx:id="addlecturerid" layoutX="35.0" layoutY="71.0" onAction="#AddLecturer" prefHeight="31.0" prefWidth="136.0" text="LECTURERS">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font></Button>
+      <Button fx:id="addmoduleid" layoutX="35.0" layoutY="129.0" onAction="#AddModule" prefHeight="31.0" prefWidth="136.0" text="MODULES">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font></Button>
+      <Button fx:id="addstudents" layoutX="224.0" layoutY="129.0" onAction="#AddStudents" prefHeight="38.0" prefWidth="162.0" text="STUDENTS">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font></Button>
+      <Button fx:id="yearID" layoutX="426.0" layoutY="129.0" onAction="#AddYear" prefHeight="38.0" prefWidth="156.0" text="YEARS">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font></Button>
+      <Button fx:id="addsemesterid" layoutX="224.0" layoutY="71.0" onAction="#Addsemester" prefHeight="38.0" prefWidth="162.0" text="SEMESTERS">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font></Button>
+      <Button fx:id="addclassesid" layoutX="420.0" layoutY="71.0" onAction="#Addclasses" prefHeight="38.0" prefWidth="162.0" text="CLASSES">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font></Button>
+
+      <!-- View Data Buttons -->
+      <Button fx:id="viewlecturers" layoutX="224.0" layoutY="187.0" onAction="#ViewLecturers" text="VIEW LECTURERS">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font></Button>
+      <Button fx:id="viewmodules" layoutX="426.0" layoutY="187.0" onAction="#ViewModules" prefHeight="38.0" prefWidth="156.0" text="VIEW MODULES">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font></Button>
+      <Button fx:id="viewsemesters" layoutX="35.0" layoutY="187.0" onAction="#ViewSemesters" text="VIEW SEMESTERS">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font></Button>
+
+      <!-- Logout Button positioned at the top right -->
+      <Button fx:id="logoutButton" blendMode="EXCLUSION" layoutX="186.0" layoutY="407.0" onAction="#handleLogout" prefHeight="31.0" prefWidth="140.0" text="Logout">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font></Button>
+
+      <!-- Section for Assigning Lecturer Role -->
+      <Label layoutX="34.0" layoutY="240.0" text="Assign Lecturer Role">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="lecturerComboBox" layoutX="33.0" layoutY="273.0" prefWidth="140.0" />
+      <ComboBox fx:id="roleComboBox" layoutX="183.0" layoutY="273.0" prefWidth="140.0">
+         <items>
+            <FXCollections fx:factory="observableArrayList">
+               <String fx:value="Lecturer" />
+               <String fx:value="Senior Lecturer" />
+               <String fx:value="Professor" />
+            </FXCollections>
+         </items>
+      </ComboBox>
+      <Button fx:id="assignRoleButton" layoutX="430.0" layoutY="273.0" onAction="#AssignLecturerRole" prefHeight="31.0" prefWidth="140.0" text="Assign Role">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font></Button>
+
+      <!-- Section for Assigning Lecturer to Module -->
+      <Label layoutX="37.0" layoutY="320.0" text="Assign Lecturer Module">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="lecturer_idComboBox" layoutX="36.0" layoutY="360.0" prefWidth="140.0" />
+      <ComboBox fx:id="moduleComboBox" layoutX="186.0" layoutY="360.0" prefWidth="140.0" />
+      <Button fx:id="assignLecturerModuleButton" layoutX="429.0" layoutY="360.0" onAction="#AssignLecturerToModule" prefHeight="31.0" prefWidth="140.0" text="Assign Module">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

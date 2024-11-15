@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="company.demo15.Login">
+   <children>
+      <ImageView fx:id="loginID" fitHeight="407.0" fitWidth="602.0">
+         <image>
+            <Image url="@limkokwing.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="-1.0" layoutY="-7.0" prefHeight="408.0" prefWidth="602.0">
+         <children>
+            <TextField fx:id="usernametxtID" layoutX="342.0" layoutY="120.0" onAction="#TakeUsername" prefHeight="40.0" prefWidth="238.0" promptText="Enter username">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="passwordtxtID" layoutX="340.0" layoutY="201.0" onAction="#TakePassword" prefHeight="40.0" prefWidth="238.0" promptText="Enter password">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </PasswordField>
+            <ComboBox fx:id="roleComboBox" layoutX="342.0" layoutY="275.0" prefHeight="40.0" prefWidth="226.0">
+               <items>
+                  <FXCollections fx:factory="observableArrayList">
+                     <String fx:value="PRL" />
+                     <String fx:value="Lecturer" />
+                     <String fx:value="Faculty Admin" />
+                  </FXCollections>
+               </items>
+            </ComboBox>
+            <Label fx:id="usernameID" layoutX="346.0" layoutY="94.0" text="USERNAME">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="passwordID" layoutX="342.0" layoutY="176.0" text="PASSWORD" textFill="#1e1d1d">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="roleID" layoutX="345.0" layoutY="250.0" text="ROLE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Text layoutX="86.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LIMKOKWING LOGIN PAGE">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Text>
+            <Button fx:id="cancelID" blendMode="RED" layoutX="486.0" layoutY="348.0" mnemonicParsing="false" onAction="#CancelProcess" prefHeight="25.0" prefWidth="82.0" text="Cancel">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="submitID" blendMode="GREEN" layoutX="24.0" layoutY="348.0" mnemonicParsing="false" onAction="#SubmitProcess" prefHeight="25.0" prefWidth="82.0" text="Login">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
